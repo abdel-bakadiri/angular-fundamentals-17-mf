@@ -7,9 +7,15 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   template: `
-    <h1>If you are reading this...</h1>
-    <p>Things have worked out well! 🎉</p>
+    <h1>Fovorites books</h1>
+    <ol>
+      <li>Seven Effective rule</li>
+      <li>Atomic habits</li>
+      <li>Power of Now</li>
+    </ol>
   `,
-  styles: ``,
+  styles: ` ol {
+    list-style-type: upper-roman;
+  }`,
 })
 export class AppComponent {}
